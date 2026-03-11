@@ -11,7 +11,7 @@
 ### 👾 About Me
 
 ```
-🎓  M.E. CS & Engineering (Cyber Security) — Chennai Institute of Technology
+🎓  B.E. CS & Engineering (Cyber Security) — Chennai Institute of Technology
 🛡️  Passionate about SOC ops, threat detection & cyber defense
 🎯  Goal: Serve in India's national cyber defense (CBI / Police Cyber Cell)
 ⚔️  Off-screen: martial arts enthusiast
