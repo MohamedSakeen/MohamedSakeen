@@ -16,27 +16,6 @@
 
 ---
 
-## 🧑‍💻 About Me
-
-```python
-class CyberSecurityEngineer:
-    def __init__(self):
-        self.name          = "Mohamed Sakeen"
-        self.role          = "Postgraduate Student – CS & Engineering (Cyber Security)"
-        self.institution   = "Chennai Institute of Technology"
-        self.location      = "Chennai, Tamil Nadu, India 🇮🇳"
-        self.focus         = ["SOC Operations", "Threat Detection", "Cyber Defense"]
-        self.passion       = "Defending the digital world, one packet at a time."
-        self.goal          = "National Cyber Defense | CBI Cyber Division | Police Cyber Cell"
-        self.fun_fact      = "I train in martial arts ⚔️ — both physically and digitally!"
-
-    def current_mission(self):
-        return "Building defensive security tools & mastering threat intelligence."
-
-me = CyberSecurityEngineer()
-print(me.current_mission())
-```
-
 ---
 
 ## 🛠️ Skills & Tools
