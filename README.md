@@ -13,7 +13,7 @@
 ```
 🎓  B.E. CS & Engineering (Cyber Security) — Chennai Institute of Technology
 🛡️  Passionate about SOC ops, threat detection & cyber defense
-🎯  Goal: Serve in India's national cyber defense (CBI / Police Cyber Cell)
+🎯  Goal: Cybersecutity specilist in Industrial field
 ⚔️  Off-screen: martial arts enthusiast
 ```
 
@@ -42,7 +42,7 @@
 |---|---|
 | 🛡️ **Filter Shield** | Browser extension blocking phishing URLs & harmful content |
 | 🤖 **Student Risk AI** | Predicts academic risk via GPA, attendance & GitHub activity |
-| 🖥️ **SOC Challenge Platform** | Simulates real SOC investigations for blue team training |
+| 🔐 **Zero-Trust Exam platofrom** | zero-trust based exam platform with integrated SOC dashboard |
 | 🎬 **Tamil Movie Watchlist** | Full-stack app tracking Tamil movies with ratings & genres |
 
 ---
@@ -52,6 +52,9 @@
 
 ### 🏅 Certifications
 - 🟦 **Google Cybersecurity Professional Certificate** — Coursera
+- 🟦 **Certified Ethical Hacker** - EC-Council
+- 🟦 **CISCO Ethical Hacker** - CISCO
+- 🟦 **CISCO CCNA** - CISCO
 - 🟩 **Python Certificate** — HackerRank
 
 ---
