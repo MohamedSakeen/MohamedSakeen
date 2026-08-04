@@ -128,13 +128,6 @@
 
 ---
 
-### 📈 Learning & Evolution Timeline
-
-<div align="center">
-  <img src="./assets/timeline.svg" alt="Learning Timeline" width="100%" />
-</div>
-
----
 
 ### 🏆 Certifications & Key Achievements
 
