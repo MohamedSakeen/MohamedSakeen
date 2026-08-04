@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 220" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
+
+      .card-bg {
+        fill: #0D1117;
+        rx: 14px;
+        ry: 14px;
+        stroke: #30363D;
+        stroke-width: 1.5px;
+      }
+
+      .card-bg:hover {
+        stroke: #00D4FF;
+      }
+
+      .icon-bg {
+        fill: rgba(0, 212, 255, 0.08);
+        stroke: rgba(0, 212, 255, 0.25);
+        stroke-width: 1px;
+        rx: 12px;
+      }
+
+      .title {
+        font-family: 'Inter', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        fill: #F0F6FC;
+      }
+
+      .tag-category {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11px;
+        font-weight: 600;
+        fill: #00D4FF;
+        letter-spacing: 0.5px;
+      }
+
+      .description {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        fill: #8B949E;
+        line-height: 1.5;
+      }
+
+      .tech-pill {
+        fill: #161B22;
+        stroke: #30363D;
+        stroke-width: 1px;
+        rx: 6px;
+      }
+
+      .tech-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 12px;
+        font-weight: 500;
+        fill: #58A6FF;
+      }
+
+      .btn-github {
+        fill: rgba(88, 166, 255, 0.1);
+        stroke: #58A6FF;
+        stroke-width: 1px;
+        rx: 8px;
+      }
+
+      .btn-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        fill: #F0F6FC;
+      }
+
+      .feature-dot {
+        fill: #7EE787;
+      }
+
+      .feature-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 13px;
+        fill: #F0F6FC;
+      }
+    </style>
+
+    <linearGradient id="firewallGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Card Container -->
+  <rect width="880" height="220" class="card-bg" />
+  <rect width="880" height="220" rx="14" ry="14" fill="url(#firewallGlow)" />
+
+  <!-- Left Icon Container -->
+  <g transform="translate(32, 32)">
+    <rect width="64" height="64" class="icon-bg" />
+    <!-- Firewall Shield / Network Vector Icon -->
+    <path d="M 32 16 L 48 24 V 36 C 48 46.5 41.2 55.8 32 58 C 22.8 55.8 16 46.5 16 36 V 24 L 32 16 Z" fill="none" stroke="#00D4FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 26 36 L 30 40 L 38 30" fill="none" stroke="#7EE787" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Title & Category Header -->
+  <g transform="translate(116, 36)">
+    <text class="tag-category">NETWORK SECURITY &amp; TRAFFIC ENGINE</text>
+    <text y="28" class="title">Firewall</text>
+  </g>
+
+  <!-- Top Right Project Status Badge -->
+  <g transform="translate(730, 32)">
+    <rect width="118" height="28" class="tech-pill" />
+    <circle cx="16" cy="14" r="4" class="feature-dot" />
+    <text x="28" y="18" font-family="'JetBrains Mono', monospace" font-size="11" fill="#7EE787" font-weight="600">PRODUCTION</text>
+  </g>
+
+  <!-- Description Body -->
+  <g transform="translate(116, 96)">
+    <text class="description">
+      <tspan x="0" y="0">High-performance network security firewall engine delivering real-time deep packet inspection (DPI),</tspan>
+      <tspan x="0" y="22">rule-based traffic filtering, and intrusion detection to secure network boundaries against malicious vectors.</tspan>
+    </text>
+  </g>
+
+  <!-- Feature Highlights Row -->
+  <g transform="translate(116, 160)">
+    <!-- Feature 1 -->
+    <circle cx="6" cy="8" r="3.5" class="feature-dot" />
+    <text x="16" y="12" class="feature-text">Packet Inspection</text>
+
+    <!-- Feature 2 -->
+    <circle cx="166" cy="8" r="3.5" class="feature-dot" />
+    <text x="176" y="12" class="feature-text">Traffic Filtering</text>
+
+    <!-- Feature 3 -->
+    <circle cx="306" cy="8" r="3.5" class="feature-dot" />
+    <text x="316" y="12" class="feature-text">Network Security</text>
+  </g>
+
+  <!-- Tech Stack Pills & GitHub Link Button (Bottom Right) -->
+  <g transform="translate(560, 150)">
+    <!-- Tech Pills -->
+    <g transform="translate(0, 0)">
+      <rect width="70" height="28" class="tech-pill" />
+      <text x="35" y="18" class="tech-text" text-anchor="middle">C++</text>
+    </g>
+    <g transform="translate(78, 0)">
+      <rect width="70" height="28" class="tech-pill" />
+      <text x="35" y="18" class="tech-text" text-anchor="middle">Python</text>
+    </g>
+
+    <!-- GitHub Link Button -->
+    <g transform="translate(156, 0)">
+      <rect width="132" height="28" class="btn-github" />
+      <!-- GitHub Icon -->
+      <path d="M 17 8 C 12.58 8 9 11.58 9 16 C 9 19.54 11.3 22.53 14.49 23.59 C 14.84 23.65 14.97 23.44 14.97 23.25 C 14.97 23.08 14.96 22.53 14.96 21.84 C 13 22.21 12.47 21.03 12.32 20.6 C 12.23 20.38 11.88 19.74 11.57 19.57 C 11.32 19.43 10.96 19.1 11.56 19.09 C 12.12 19.08 12.52 19.6 12.65 19.81 C 13.29 20.89 14.32 20.58 14.73 20.39 C 14.79 19.93 14.98 19.61 15.18 19.43 C 13.43 19.23 11.6 18.55 11.6 15.54 C 11.6 14.68 11.9 13.98 12.4 13.43 C 12.32 13.23 12.05 12.42 12.48 11.33 C 12.48 11.33 13.14 11.12 14.97 12.36 C 15.6 12.18 16.28 12.09 16.96 12.09 C 17.64 12.09 18.32 12.18 18.95 12.36 C 20.78 11.11 21.44 11.33 21.44 11.33 C 21.87 12.42 21.6 13.23 21.52 13.43 C 22.02 13.98 22.32 14.67 22.32 15.54 C 22.32 18.56 20.48 19.23 18.73 19.43 C 18.99 19.66 19.22 20.1 19.22 20.78 C 19.22 21.76 19.21 22.55 19.21 22.79 C 19.21 22.98 19.34 23.2 19.69 23.13 C 22.88 22.07 25.18 19.07 25.18 15.54 C 25.18 11.02 21.6 7.44 17.08 7.44 Z" fill="#F0F6FC" />
+      <text x="44" y="19" class="btn-text">View Code</text>
+    </g>
+  </g>
+</svg>

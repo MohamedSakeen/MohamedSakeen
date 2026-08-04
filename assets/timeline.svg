@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 240" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
+
+      .timeline-card {
+        fill: #0D1117;
+        rx: 16px;
+        ry: 16px;
+        stroke: #30363D;
+        stroke-width: 1.5px;
+      }
+
+      .line-bg {
+        stroke: #21262D;
+        stroke-width: 3px;
+      }
+
+      .line-active {
+        stroke: url(#timelineGradient);
+        stroke-width: 3px;
+        stroke-dasharray: 10, 5;
+        animation: flowDash 15s linear infinite;
+      }
+
+      @keyframes flowDash {
+        to { stroke-dashoffset: -150; }
+      }
+
+      .node-bg {
+        fill: #0D1117;
+        stroke: #30363D;
+        stroke-width: 2px;
+      }
+
+      .node-active {
+        fill: #0D1117;
+        stroke: #00D4FF;
+        stroke-width: 3px;
+        filter: drop-shadow(0 0 6px #00D4FF);
+      }
+
+      .node-pulse {
+        fill: none;
+        stroke: #00D4FF;
+        stroke-width: 1.5px;
+        animation: nodePulse 2.5s infinite;
+      }
+
+      @keyframes nodePulse {
+        0% { transform: scale(1); opacity: 0.8; }
+        100% { transform: scale(2.2); opacity: 0; }
+      }
+
+      .step-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        fill: #F0F6FC;
+      }
+
+      .step-sub {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11px;
+        fill: #8B949E;
+      }
+
+      .step-tag {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 10px;
+        font-weight: 600;
+        fill: #00D4FF;
+      }
+
+      .header-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        fill: #F0F6FC;
+      }
+
+      .header-sub {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11px;
+        fill: #8B949E;
+      }
+
+      .card-step {
+        fill: #161B22;
+        stroke: #30363D;
+        stroke-width: 1px;
+        rx: 8px;
+      }
+    </style>
+
+    <linearGradient id="timelineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D4FF" />
+      <stop offset="50%" stop-color="#58A6FF" />
+      <stop offset="100%" stop-color="#7EE787" />
+    </linearGradient>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="920" height="240" class="timeline-card" />
+
+  <!-- Header -->
+  <g transform="translate(36, 28)">
+    <text class="header-title">Learning &amp; Growth Timeline</text>
+    <text y="20" class="header-sub">PROGRESSIVE EVOLUTION // DEEPENING SECURITY SPECIALIZATION</text>
+  </g>
+
+  <!-- Main Horizontal Connecting Line -->
+  <g transform="translate(0, 110)">
+    <line x1="80" y1="0" x2="840" y2="0" class="line-bg" />
+    <line x1="80" y1="0" x2="840" y2="0" class="line-active" />
+  </g>
+
+  <!-- Step 1: Cybersecurity Fundamentals -->
+  <g transform="translate(80, 110)">
+    <!-- Node Circle -->
+    <circle cx="0" cy="0" r="14" class="node-bg" />
+    <circle cx="0" cy="0" r="6" fill="#00D4FF" />
+
+    <!-- Step Box Above/Below -->
+    <g transform="translate(-70, 24)">
+      <rect width="140" height="74" class="card-step" />
+      <text x="12" y="20" class="step-tag">PHASE 01</text>
+      <text x="12" y="38" class="step-title">Cybersecurity</text>
+      <text x="12" y="56" class="step-sub">Foundations &amp; Net</text>
+    </g>
+  </g>
+
+  <!-- Step 2: Practical Projects -->
+  <g transform="translate(270, 110)">
+    <!-- Node Circle -->
+    <circle cx="0" cy="0" r="14" class="node-bg" />
+    <circle cx="0" cy="0" r="6" fill="#00D4FF" />
+
+    <!-- Step Box Above -->
+    <g transform="translate(-70, -96)">
+      <rect width="140" height="74" class="card-step" />
+      <text x="12" y="20" class="step-tag">PHASE 02</text>
+      <text x="12" y="38" class="step-title">Projects</text>
+      <text x="12" y="56" class="step-sub">Build &amp; Filter Engines</text>
+    </g>
+  </g>
+
+  <!-- Step 3: CTFs & Offense -->
+  <g transform="translate(460, 110)">
+    <!-- Node Circle -->
+    <circle cx="0" cy="0" r="14" class="node-bg" />
+    <circle cx="0" cy="0" r="6" fill="#58A6FF" />
+
+    <!-- Step Box Below -->
+    <g transform="translate(-70, 24)">
+      <rect width="140" height="74" class="card-step" />
+      <text x="12" y="20" class="step-tag" fill="#58A6FF">PHASE 03</text>
+      <text x="12" y="38" class="step-title">CTFs</text>
+      <text x="12" y="56" class="step-sub">Challenge &amp; Reverse</text>
+    </g>
+  </g>
+
+  <!-- Step 4: SOC & Detection -->
+  <g transform="translate(650, 110)">
+    <!-- Node Circle -->
+    <circle cx="0" cy="0" r="14" class="node-bg" />
+    <circle cx="0" cy="0" r="6" fill="#58A6FF" />
+
+    <!-- Step Box Above -->
+    <g transform="translate(-70, -96)">
+      <rect width="140" height="74" class="card-step" />
+      <text x="12" y="20" class="step-tag" fill="#58A6FF">PHASE 04</text>
+      <text x="12" y="38" class="step-title">SOC Operations</text>
+      <text x="12" y="56" class="step-sub">Threat Hunting &amp; SIEM</text>
+    </g>
+  </g>
+
+  <!-- Step 5: Industrial Security (Current Active Specialization) -->
+  <g transform="translate(840, 110)">
+    <!-- Pulsing Active Node -->
+    <g transform="translate(0, 0)">
+      <circle cx="0" cy="0" r="16" class="node-pulse" />
+      <circle cx="0" cy="0" r="14" class="node-active" />
+      <circle cx="0" cy="0" r="6" fill="#7EE787" />
+    </g>
+
+    <!-- Step Box Below -->
+    <g transform="translate(-75, 24)">
+      <rect width="150" height="74" class="card-step" stroke="#7EE787" stroke-width="1.5" />
+      <text x="12" y="20" class="step-tag" fill="#7EE787">ACTIVE FOCUS</text>
+      <text x="12" y="38" class="step-title">Industrial Security</text>
+      <text x="12" y="56" class="step-sub">ICS / OT &amp; Zero Trust</text>
+    </g>
+  </g>
+</svg>

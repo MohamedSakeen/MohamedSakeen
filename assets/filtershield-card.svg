@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 220" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
+
+      .card-bg {
+        fill: #0D1117;
+        rx: 14px;
+        ry: 14px;
+        stroke: #30363D;
+        stroke-width: 1.5px;
+      }
+
+      .icon-bg {
+        fill: rgba(88, 166, 255, 0.08);
+        stroke: rgba(88, 166, 255, 0.25);
+        stroke-width: 1px;
+        rx: 12px;
+      }
+
+      .title {
+        font-family: 'Inter', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        fill: #F0F6FC;
+      }
+
+      .tag-category {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11px;
+        font-weight: 600;
+        fill: #58A6FF;
+        letter-spacing: 0.5px;
+      }
+
+      .description {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        fill: #8B949E;
+        line-height: 1.5;
+      }
+
+      .tech-pill {
+        fill: #161B22;
+        stroke: #30363D;
+        stroke-width: 1px;
+        rx: 6px;
+      }
+
+      .tech-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 12px;
+        font-weight: 500;
+        fill: #58A6FF;
+      }
+
+      .btn-github {
+        fill: rgba(88, 166, 255, 0.1);
+        stroke: #58A6FF;
+        stroke-width: 1px;
+        rx: 8px;
+      }
+
+      .btn-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        fill: #F0F6FC;
+      }
+
+      .feature-dot {
+        fill: #00D4FF;
+      }
+
+      .feature-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 13px;
+        fill: #F0F6FC;
+      }
+    </style>
+
+    <linearGradient id="filterGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Card Container -->
+  <rect width="880" height="220" class="card-bg" />
+  <rect width="880" height="220" rx="14" ry="14" fill="url(#filterGlow)" />
+
+  <!-- Left Icon Container -->
+  <g transform="translate(32, 32)">
+    <rect width="64" height="64" class="icon-bg" />
+    <!-- Browser / Shield Protection Vector Icon -->
+    <rect x="18" y="20" width="28" height="24" rx="4" fill="none" stroke="#58A6FF" stroke-width="2" />
+    <line x1="18" y1="27" x2="46" y2="27" stroke="#58A6FF" stroke-width="1.5" />
+    <circle cx="23" cy="23.5" r="1" fill="#58A6FF" />
+    <circle cx="27" cy="23.5" r="1" fill="#58A6FF" />
+    <path d="M 32 30 L 42 34 V 44 C 42 49 37.5 53 32 54 C 26.5 53 22 49 22 44 V 34 L 32 30 Z" fill="#0D1117" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Title & Category Header -->
+  <g transform="translate(116, 36)">
+    <text class="tag-category">BROWSER EXTENSION &amp; PHISHING DEFENSE</text>
+    <text y="28" class="title">FilterShield</text>
+  </g>
+
+  <!-- Top Right Status Badge -->
+  <g transform="translate(730, 32)">
+    <rect width="118" height="28" class="tech-pill" />
+    <circle cx="16" cy="14" r="4" class="feature-dot" />
+    <text x="28" y="18" font-family="'JetBrains Mono', monospace" font-size="11" fill="#00D4FF" font-weight="600">EXTENSION</text>
+  </g>
+
+  <!-- Description Body -->
+  <g transform="translate(116, 96)">
+    <text class="description">
+      <tspan x="0" y="0">Intelligent browser extension providing active real-time protection against malicious URLs,</tspan>
+      <tspan x="0" y="22">credential-harvesting phishing attempts, and deceptive web content using heuristic filtering.</tspan>
+    </text>
+  </g>
+
+  <!-- Feature Highlights Row -->
+  <g transform="translate(116, 160)">
+    <!-- Feature 1 -->
+    <circle cx="6" cy="8" r="3.5" class="feature-dot" />
+    <text x="16" y="12" class="feature-text">Browser Extension</text>
+
+    <!-- Feature 2 -->
+    <circle cx="176" cy="8" r="3.5" class="feature-dot" />
+    <text x="186" y="12" class="feature-text">Anti-Phishing Engine</text>
+
+    <!-- Feature 3 -->
+    <circle cx="346" cy="8" r="3.5" class="feature-dot" />
+    <text x="356" y="12" class="feature-text">Malicious Content Protection</text>
+  </g>
+
+  <!-- Tech Stack Pills & GitHub Link Button (Bottom Right) -->
+  <g transform="translate(520, 150)">
+    <!-- Tech Pills -->
+    <g transform="translate(0, 0)">
+      <rect width="90" height="28" class="tech-pill" />
+      <text x="45" y="18" class="tech-text" text-anchor="middle">JavaScript</text>
+    </g>
+    <g transform="translate(98, 0)">
+      <rect width="110" height="28" class="tech-pill" />
+      <text x="55" y="18" class="tech-text" text-anchor="middle">Chrome API</text>
+    </g>
+
+    <!-- GitHub Link Button -->
+    <g transform="translate(216, 0)">
+      <rect width="112" height="28" class="btn-github" />
+      <!-- GitHub Icon -->
+      <path d="M 15 8 C 10.58 8 7 11.58 7 16 C 7 19.54 9.3 22.53 12.49 23.59 C 12.84 23.65 12.97 23.44 12.97 23.25 C 12.97 23.08 12.96 22.53 12.96 21.84 C 11 22.21 10.47 21.03 10.32 20.6 C 10.23 20.38 9.88 19.74 9.57 19.57 C 9.32 19.43 8.96 19.1 9.56 19.09 C 10.12 19.08 10.52 19.6 10.65 19.81 C 11.29 20.89 12.32 20.58 12.73 20.39 C 12.79 19.93 12.98 19.61 13.18 19.43 C 11.43 19.23 9.6 18.55 9.6 15.54 C 9.6 14.68 9.9 13.98 10.4 13.43 C 10.32 13.23 10.05 12.42 10.48 11.33 C 10.48 11.33 11.14 11.12 12.97 12.36 C 13.6 12.18 14.28 12.09 14.96 12.09 C 15.64 12.09 16.32 12.18 16.95 12.36 C 18.78 11.11 19.44 11.33 19.44 11.33 C 19.87 12.42 19.6 13.23 19.52 13.43 C 20.02 13.98 20.32 14.67 20.32 15.54 C 20.32 18.56 18.48 19.23 16.73 19.43 C 16.99 19.66 17.22 20.1 17.22 20.78 C 17.22 21.76 17.21 22.55 17.21 22.79 C 17.21 22.98 17.34 23.2 17.69 23.13 C 20.88 22.07 23.18 19.07 23.18 15.54 C 23.18 11.02 19.6 7.44 15.08 7.44 Z" fill="#F0F6FC" />
+      <text x="38" y="19" class="btn-text">View Code</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
+
+      .matrix-card {
+        fill: #0D1117;
+        rx: 16px;
+        ry: 16px;
+        stroke: #30363D;
+        stroke-width: 1.5px;
+      }
+
+      .header-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        fill: #F0F6FC;
+      }
+
+      .header-sub {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 12px;
+        fill: #8B949E;
+      }
+
+      .category-box {
+        fill: #161B22;
+        stroke: #30363D;
+        stroke-width: 1px;
+        rx: 10px;
+      }
+
+      .category-title {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 13px;
+        font-weight: 600;
+        fill: #00D4FF;
+      }
+
+      .pill {
+        fill: rgba(22, 27, 34, 0.9);
+        stroke: #30363D;
+        stroke-width: 1px;
+        rx: 6px;
+        transition: all 0.3s ease;
+      }
+
+      .pill-lang { stroke: rgba(0, 212, 255, 0.4); }
+      .pill-sec { stroke: rgba(126, 231, 135, 0.4); }
+      .pill-os { stroke: rgba(88, 166, 255, 0.4); }
+      .pill-web { stroke: rgba(0, 212, 255, 0.3); }
+      .pill-siem { stroke: rgba(126, 231, 135, 0.3); }
+
+      .pill-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        fill: #F0F6FC;
+      }
+
+      .active-pulse {
+        fill: #7EE787;
+        animation: activeGlow 1.8s ease-in-out infinite alternate;
+      }
+
+      @keyframes activeGlow {
+        0% { opacity: 0.4; }
+        100% { opacity: 1; filter: drop-shadow(0 0 4px #7EE787); }
+      }
+
+      .level-bar-bg {
+        fill: #21262D;
+        rx: 3px;
+      }
+
+      .level-bar-fill-cyan {
+        fill: #00D4FF;
+        rx: 3px;
+        animation: fillBar 2s ease-out forwards;
+      }
+
+      .level-bar-fill-blue {
+        fill: #58A6FF;
+        rx: 3px;
+        animation: fillBar 2s ease-out forwards;
+      }
+
+      .level-bar-fill-green {
+        fill: #7EE787;
+        rx: 3px;
+        animation: fillBar 2s ease-out forwards;
+      }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="920" height="440" class="matrix-card" />
+
+  <!-- Matrix Header -->
+  <g transform="translate(36, 32)">
+    <circle cx="8" cy="8" r="4" class="active-pulse" />
+    <text x="24" y="12" class="header-title">Technical Competency &amp; Security Matrix</text>
+    <text x="24" y="32" class="header-sub">SYSTEM_TELEMETRY // CATEGORIZED SKILL GRAPH</text>
+  </g>
+
+  <!-- Top Right Indicator -->
+  <g transform="translate(720, 36)">
+    <rect width="164" height="26" rx="6" fill="rgba(0, 212, 255, 0.08)" stroke="rgba(0, 212, 255, 0.25)" stroke-width="1" />
+    <text x="82" y="17" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#00D4FF" text-anchor="middle">5 DOMAINS ACTIVE</text>
+  </g>
+
+  <!-- Grid Layout: 3 Top Boxes, 2 Bottom Boxes -->
+
+  <!-- 1. Languages (Top Left: 260x150) -->
+  <g transform="translate(36, 90)">
+    <rect width="268" height="150" class="category-box" />
+    <text x="16" y="28" class="category-title">⚡ LANGUAGES</text>
+    
+    <!-- Pills Grid -->
+    <g transform="translate(16, 44)">
+      <g transform="translate(0, 0)">
+        <rect width="72" height="26" class="pill pill-lang" />
+        <text x="36" y="17" class="pill-text" text-anchor="middle">Python</text>
+      </g>
+      <g transform="translate(80, 0)">
+        <rect width="60" height="26" class="pill pill-lang" />
+        <text x="30" y="17" class="pill-text" text-anchor="middle">Java</text>
+      </g>
+      <g transform="translate(148, 0)">
+        <rect width="55" height="26" class="pill pill-lang" />
+        <text x="27.5" y="17" class="pill-text" text-anchor="middle">C++</text>
+      </g>
+      <g transform="translate(0, 34)">
+        <rect width="90" height="26" class="pill pill-lang" />
+        <text x="45" y="17" class="pill-text" text-anchor="middle">JavaScript</text>
+      </g>
+      <g transform="translate(98, 34)">
+        <rect width="60" height="26" class="pill pill-lang" />
+        <text x="30" y="17" class="pill-text" text-anchor="middle">HTML</text>
+      </g>
+      <g transform="translate(166, 34)">
+        <rect width="55" height="26" class="pill pill-lang" />
+        <text x="27.5" y="17" class="pill-text" text-anchor="middle">CSS</text>
+      </g>
+    </g>
+
+    <!-- Proficiency Level Bar -->
+    <g transform="translate(16, 122)">
+      <rect width="236" height="6" class="level-bar-bg" />
+      <rect width="210" height="6" class="level-bar-fill-cyan" />
+    </g>
+  </g>
+
+  <!-- 2. Security & Penetration Testing (Top Center/Right: 560x150) -->
+  <g transform="translate(320, 90)">
+    <rect width="564" height="150" class="category-box" />
+    <text x="16" y="28" class="category-title" fill="#7EE787">🛡️ DEFENSIVE &amp; OFFENSIVE SECURITY</text>
+    
+    <!-- Pills Grid -->
+    <g transform="translate(16, 44)">
+      <g transform="translate(0, 0)"><rect width="95" height="26" class="pill pill-sec" /><text x="47.5" y="17" class="pill-text" text-anchor="middle">Burp Suite</text></g>
+      <g transform="translate(103, 0)"><rect width="90" height="26" class="pill pill-sec" /><text x="45" y="17" class="pill-text" text-anchor="middle">Wireshark</text></g>
+      <g transform="translate(201, 0)"><rect width="68" height="26" class="pill pill-sec" /><text x="34" y="17" class="pill-text" text-anchor="middle">Nmap</text></g>
+      <g transform="translate(277, 0)"><rect width="95" height="26" class="pill pill-sec" /><text x="47.5" y="17" class="pill-text" text-anchor="middle">Metasploit</text></g>
+      <g transform="translate(380, 0)"><rect width="98" height="26" class="pill pill-sec" /><text x="49" y="17" class="pill-text" text-anchor="middle">OWASP ZAP</text></g>
+
+      <g transform="translate(0, 34)"><rect width="72" height="26" class="pill pill-sec" /><text x="36" y="17" class="pill-text" text-anchor="middle">Ghidra</text></g>
+      <g transform="translate(80, 34)"><rect width="62" height="26" class="pill pill-sec" /><text x="31" y="17" class="pill-text" text-anchor="middle">FFUF</text></g>
+      <g transform="translate(150, 34)"><rect width="68" height="26" class="pill pill-sec" /><text x="34" y="17" class="pill-text" text-anchor="middle">HTTPX</text></g>
+      <g transform="translate(226, 34)"><rect width="74" height="26" class="pill pill-sec" /><text x="37" y="17" class="pill-text" text-anchor="middle">Katana</text></g>
+      <g transform="translate(308, 34)"><rect width="86" height="26" class="pill pill-sec" /><text x="43" y="17" class="pill-text" text-anchor="middle">Subfinder</text></g>
+      <g transform="translate(402, 34)"><rect width="68" height="26" class="pill pill-sec" /><text x="34" y="17" class="pill-text" text-anchor="middle">Nuclei</text></g>
+    </g>
+
+    <!-- Level Bar -->
+    <g transform="translate(16, 122)">
+      <rect width="532" height="6" class="level-bar-bg" />
+      <rect width="500" height="6" class="level-bar-fill-green" />
+    </g>
+  </g>
+
+  <!-- 3. Operating Systems (Bottom Left: 268x150) -->
+  <g transform="translate(36, 256)">
+    <rect width="268" height="150" class="category-box" />
+    <text x="16" y="28" class="category-title" fill="#58A6FF">💻 OPERATING SYSTEMS</text>
+    
+    <g transform="translate(16, 44)">
+      <g transform="translate(0, 0)"><rect width="84" height="26" class="pill pill-os" /><text x="42" y="17" class="pill-text" text-anchor="middle">Windows</text></g>
+      <g transform="translate(92, 0)"><rect width="74" height="26" class="pill pill-os" /><text x="37" y="17" class="pill-text" text-anchor="middle">Ubuntu</text></g>
+      <g transform="translate(0, 34)"><rect width="94" height="26" class="pill pill-os" /><text x="47" y="17" class="pill-text" text-anchor="middle">Kali Linux</text></g>
+      <g transform="translate(102, 34)"><rect width="64" height="26" class="pill pill-os" /><text x="32" y="17" class="pill-text" text-anchor="middle">WSL</text></g>
+    </g>
+
+    <g transform="translate(16, 122)">
+      <rect width="236" height="6" class="level-bar-bg" />
+      <rect width="220" height="6" class="level-bar-fill-blue" />
+    </g>
+  </g>
+
+  <!-- 4. Web Development (Bottom Center: 290x150) -->
+  <g transform="translate(320, 256)">
+    <rect width="270" height="150" class="category-box" />
+    <text x="16" y="28" class="category-title">🌐 WEB DEVELOPMENT</text>
+
+    <g transform="translate(16, 44)">
+      <g transform="translate(0, 0)"><rect width="64" height="26" class="pill pill-web" /><text x="32" y="17" class="pill-text" text-anchor="middle">React</text></g>
+      <g transform="translate(72, 0)"><rect width="72" height="26" class="pill pill-web" /><text x="36" y="17" class="pill-text" text-anchor="middle">NodeJS</text></g>
+      <g transform="translate(152, 0)"><rect width="72" height="26" class="pill pill-web" /><text x="36" y="17" class="pill-text" text-anchor="middle">Express</text></g>
+      <g transform="translate(0, 34)"><rect width="64" height="26" class="pill pill-web" /><text x="32" y="17" class="pill-text" text-anchor="middle">Flask</text></g>
+      <g transform="translate(72, 34)"><rect width="84" height="26" class="pill pill-web" /><text x="42" y="17" class="pill-text" text-anchor="middle">MongoDB</text></g>
+    </g>
+
+    <g transform="translate(16, 122)">
+      <rect width="238" height="6" class="level-bar-bg" />
+      <rect width="205" height="6" class="level-bar-fill-cyan" />
+    </g>
+  </g>
+
+  <!-- 5. SIEM & Monitoring (Bottom Right: 278x150) -->
+  <g transform="translate(606, 256)">
+    <rect width="278" height="150" class="category-box" />
+    <text x="16" y="28" class="category-title" fill="#7EE787">📊 SIEM &amp; MONITORING</text>
+
+    <g transform="translate(16, 44)">
+      <g transform="translate(0, 0)"><rect width="72" height="26" class="pill pill-siem" /><text x="36" y="17" class="pill-text" text-anchor="middle">Splunk</text></g>
+      <g transform="translate(80, 0)"><rect width="70" height="26" class="pill pill-siem" /><text x="35" y="17" class="pill-text" text-anchor="middle">Wazuh</text></g>
+      <g transform="translate(0, 34)"><rect width="68" height="26" class="pill pill-siem" /><text x="34" y="17" class="pill-text" text-anchor="middle">Elastic</text></g>
+      <g transform="translate(76, 34)"><rect width="74" height="26" class="pill pill-siem" /><text x="37" y="17" class="pill-text" text-anchor="middle">Sysmon</text></g>
+    </g>
+
+    <g transform="translate(16, 122)">
+      <rect width="246" height="6" class="level-bar-bg" />
+      <rect width="230" height="6" class="level-bar-fill-green" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
+
+      .map-card {
+        fill: #0D1117;
+        rx: 16px;
+        ry: 16px;
+        stroke: #30363D;
+        stroke-width: 1.5px;
+      }
+
+      .map-land {
+        fill: #21262D;
+        stroke: #30363D;
+        stroke-width: 0.5px;
+      }
+
+      .map-grid-line {
+        stroke: #161B22;
+        stroke-width: 1px;
+        stroke-dasharray: 4, 4;
+      }
+
+      .ping-ring {
+        fill: none;
+        stroke: #00D4FF;
+        stroke-width: 2px;
+        transform-origin: 672px 198px;
+        animation: ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+      }
+
+      .ping-ring-outer {
+        fill: none;
+        stroke: #58A6FF;
+        stroke-width: 1.5px;
+        transform-origin: 672px 198px;
+        animation: ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite 0.8s;
+      }
+
+      @keyframes ping {
+        0% {
+          transform: scale(0.2);
+          opacity: 1;
+        }
+        80%, 100% {
+          transform: scale(3.5);
+          opacity: 0;
+        }
+      }
+
+      .location-dot {
+        fill: #00D4FF;
+        filter: drop-shadow(0 0 8px #00D4FF);
+      }
+
+      .location-center-dot {
+        fill: #FFFFFF;
+      }
+
+      .text-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        fill: #F0F6FC;
+      }
+
+      .text-sub {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 12px;
+        fill: #8B949E;
+      }
+
+      .text-highlight {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 13px;
+        font-weight: 600;
+        fill: #00D4FF;
+      }
+
+      .card-glass {
+        fill: rgba(22, 27, 34, 0.85);
+        stroke: #30363D;
+        stroke-width: 1px;
+        rx: 10px;
+      }
+
+      .scanner-line {
+        stroke: linear-gradient(to right, transparent, #00D4FF, transparent);
+        stroke-width: 1px;
+        opacity: 0.3;
+      }
+
+      .connect-line {
+        stroke: #00D4FF;
+        stroke-width: 1.5px;
+        stroke-dasharray: 4 4;
+        animation: dash 20s linear infinite;
+      }
+
+      @keyframes dash {
+        to {
+          stroke-dashoffset: -100;
+        }
+      }
+    </style>
+
+    <radialGradient id="chennaiGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="920" height="340" class="map-card" />
+
+  <!-- Equator & Latitude Grid Lines -->
+  <line x1="40" y1="90" x2="880" y2="90" class="map-grid-line" />
+  <line x1="40" y1="170" x2="880" y2="170" class="map-grid-line" />
+  <line x1="40" y1="250" x2="880" y2="250" class="map-grid-line" />
+  
+  <line x1="200" y1="30" x2="200" y2="310" class="map-grid-line" />
+  <line x1="440" y1="30" x2="440" y2="310" class="map-grid-line" />
+  <line x1="680" y1="30" x2="680" y2="310" class="map-grid-line" />
+
+  <!-- High quality simplified world vector landmasses -->
+  <!-- North America -->
+  <path class="map-land" d="M 120 70 Q 150 60 190 75 T 230 90 T 260 120 T 220 150 T 170 140 T 130 110 Z" />
+  <!-- Greenland -->
+  <path class="map-land" d="M 280 40 Q 310 35 320 55 T 290 70 Z" />
+  <!-- South America -->
+  <path class="map-land" d="M 240 170 Q 280 180 290 220 T 260 270 T 230 250 T 220 200 Z" />
+  <!-- Europe -->
+  <path class="map-land" d="M 430 65 Q 470 60 500 80 T 460 110 T 420 90 Z" />
+  <!-- Africa -->
+  <path class="map-land" d="M 430 125 Q 490 120 510 160 T 500 230 T 450 240 T 420 170 Z" />
+  <!-- Asia (Mainland) -->
+  <path class="map-land" d="M 510 65 Q 580 50 670 60 T 780 80 T 800 130 T 730 150 T 630 120 T 520 90 Z" />
+  <!-- India Subcontinent -->
+  <path class="map-land" d="M 630 120 Q 660 135 680 165 T 665 210 T 640 180 T 620 140 Z" />
+  <!-- Australia -->
+  <path class="map-land" d="M 740 210 Q 800 200 820 240 T 780 280 T 730 250 Z" />
+  <!-- Japan & Islands -->
+  <path class="map-land" d="M 790 95 Q 810 100 800 125 Z" />
+
+  <!-- Coordinates & Location Overlay Card (Left Side) -->
+  <g transform="translate(40, 40)">
+    <rect width="280" height="150" class="card-glass" />
+    
+    <!-- Status header -->
+    <text x="20" y="32" class="text-sub">LOCATION_NODE // INDIA</text>
+    <text x="20" y="58" class="text-title">Chennai, Tamil Nadu</text>
+    
+    <line x1="20" y1="72" x2="260" y2="72" stroke="#30363D" stroke-width="1" />
+    
+    <!-- Coordinates -->
+    <text x="20" y="94" class="text-sub">LATITUDE</text>
+    <text x="20" y="112" class="text-highlight">13.0827° N</text>
+
+    <text x="140" y="94" class="text-sub">LONGITUDE</text>
+    <text x="140" y="112" class="text-highlight">80.2707° E</text>
+
+    <g transform="translate(20, 126)">
+      <circle cx="6" cy="6" r="4" fill="#7EE787" />
+      <text x="16" y="9" font-family="'Inter', sans-serif" font-size="11" fill="#7EE787" font-weight="500">Active Node • Primary Base</text>
+    </g>
+  </g>
+
+  <!-- Connection Line from Card to Chennai Pin -->
+  <path class="connect-line" d="M 320 115 L 672 198" />
+
+  <!-- Chennai Pin Location (approx 672, 198 on this scale) -->
+  <!-- Glowing Glow Circle -->
+  <circle cx="672" cy="198" r="40" fill="url(#chennaiGlow)" />
+  
+  <!-- Animated Ping Waves -->
+  <circle cx="672" cy="198" r="16" class="ping-ring-outer" />
+  <circle cx="672" cy="198" r="16" class="ping-ring" />
+  
+  <!-- Solid Glowing Center Dot -->
+  <circle cx="672" cy="198" r="6" class="location-dot" />
+  <circle cx="672" cy="198" r="2.5" class="location-center-dot" />
+
+  <!-- Pin Label Tooltip -->
+  <g transform="translate(685, 170)">
+    <rect width="130" height="30" rx="6" fill="#161B22" stroke="#00D4FF" stroke-width="1" />
+    <text x="10" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#00D4FF">📍 CHENNAI [IN]</text>
+  </g>
+
+  <!-- Bottom Legend / Info Bar -->
+  <g transform="translate(40, 280)">
+    <text x="0" y="18" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8B949E">
+      <tspan fill="#58A6FF">&gt;</tspan> REGION: IND-SOUTH-1 <tspan fill="#30363D">|</tspan> TIMEZONE: IST (UTC+5:30) <tspan fill="#30363D">|</tspan> FOCUS: DEFENSIVE &amp; SOC OPS
+    </text>
+  </g>
+</svg>
