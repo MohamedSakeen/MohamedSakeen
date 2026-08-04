@@ -1,70 +1,278 @@
+````markdown
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:00d4ff&height=150&section=header&text=Mohamed%20Sakeen&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=65"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0D1117,100:00D4FF&text=Mohamed%20Sakeen&fontColor=ffffff&fontSize=44&fontAlignY=35&animation=fadeIn"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=00D4FF&center=true&vCenter=true&width=500&lines=Cybersecurity+Postgraduate+%40+CIT;SOC+Analyst+%7C+Ethical+Hacker;Building+Defensive+Security+Tools+🛡️)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&pause=1800&color=00D4FF&center=true&vCenter=true&width=650&lines=Cybersecurity+Engineer;Learning+Something+New+Every+Day.;Building+Security+Tools.;SOC+%7C+Threat+Detection+%7C+Zero+Trust.;CTF+Player+%7C+Fast+Learner.;Turning+Curiosity+Into+Security.)](https://git.io/typing-svg)
+
+<p>
+<a href="https://linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://tryhackme.com/p/YOUR_USERNAME"><img src="https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white"/></a>
+<a href="https://www.hackthebox.com/"><img src="https://img.shields.io/badge/HackTheBox-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black"/></a>
+<a href="https://portswigger.net/web-security"><img src="https://img.shields.io/badge/PortSwigger-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white"/></a>
+<a href="https://github.com/YOUR_GITHUB_USERNAME"><img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&style=for-the-badge&color=00d4ff"/></a>
+</p>
 
 </div>
 
 ---
 
-### 👾 About Me
+# 👋 Hello, I'm Mohamed Sakeen
 
+I'm a **Cybersecurity Engineering student** from **Chennai, India 🇮🇳** who enjoys understanding how systems work, how attackers think, and how defenders can stay ahead.
+
+I enjoy building security-focused projects, solving CTF challenges, learning new technologies quickly, and continuously improving my engineering skills.
+
+> **Mission:** Build secure systems through continuous learning, defensive engineering, and practical cybersecurity.
+
+---
+
+# 📍 Location
+
+```text
+🌍 Chennai, Tamil Nadu, India
+
+Status
+🟢 Available for Collaboration
+
+Current Mission
+Building practical cybersecurity tools.
+
+Learning Mindset
+Learn → Build → Break → Secure → Repeat
 ```
-🎓  B.E. CS & Engineering (Cyber Security) — Chennai Institute of Technology
-🛡️  Passionate about SOC ops, threat detection & cyber defense
-🎯  Goal: Cybersecutity specilist in Industrial field
-⚔️  Off-screen: martial arts enthusiast
+
+---
+
+# 🎯 Current Focus
+
+- 🛡️ Detection Engineering
+- 🔍 Threat Hunting
+- ⚙️ SOC Operations
+- 🔐 Zero Trust Architecture
+- 🧠 Reverse Engineering
+- ☁️ Cloud Security
+- 🏭 Industrial Cybersecurity
+- 💻 Data Structures & Algorithms
+
+---
+
+# 💻 Technology Stack
+
+## Languages
+
+<p>
+<img src="https://skillicons.dev/icons?i=python,java,cpp,js,html,css"/>
+</p>
+
+## Web Development
+
+<p>
+<img src="https://skillicons.dev/icons?i=react,nodejs,express,flask,mongodb"/>
+</p>
+
+## Operating Systems
+
+<p>
+<img src="https://skillicons.dev/icons?i=windows,ubuntu,kali,linux"/>
+</p>
+
+## Security & Networking
+
+<p>
+<img src="https://go-skill-icons.vercel.app/api/icons?i=wireshark,burpsuite,docker,git,github"/>
+</p>
+
+**Security Tools**
+
+- Burp Suite
+- Wireshark
+- Nmap
+- Metasploit
+- Ghidra
+- OWASP ZAP
+- FFUF
+- Nuclei
+- Katana
+- HTTPX
+- Subfinder
+
+---
+
+## SIEM & Monitoring
+
+- Splunk
+- Wazuh
+- Sysmon
+- Elastic Stack
+
+---
+
+# 🚀 Featured Projects
+
+## 🛡️ Firewall
+
+A firewall implementation focused on packet inspection, traffic filtering and secure network communication.
+
+**Focus**
+
+`Networking` • `Security` • `Packet Filtering`
+
+---
+
+## 🛡️ FilterShield
+
+A browser extension that protects users from phishing websites and malicious content while improving browsing safety.
+
+**Tech**
+
+JavaScript • Chrome Extension API
+
+---
+
+## 🔐 Zero Trust Examination Platform
+
+A secure examination platform implementing Zero Trust principles with monitoring capabilities and security-focused authentication.
+
+**Tech**
+
+React • Node.js • Express • MongoDB
+
+---
+
+# 🏆 Achievements
+
+🏅 Google Cybersecurity Professional Certificate
+
+🏅 EC-Council Certified Ethical Hacker (CEH)
+
+🏅 Cisco Ethical Hacker
+
+🏅 Cisco CCNA
+
+🏅 HackerRank Python Certificate
+
+🥋 World Karate Champion
+
+🥋 Black Belt
+
+💻 350+ SkillRack Problems Solved
+
+🏁 Active CTF Learner
+
+---
+
+# 🌐 Cybersecurity Platforms
+
+<p align="center">
+
+<a href="https://tryhackme.com/p/YOUR_USERNAME">
+<img src="https://img.shields.io/badge/TryHackMe-Profile-red?style=for-the-badge&logo=tryhackme"/>
+</a>
+
+<a href="https://app.hackthebox.com/profile">
+<img src="https://img.shields.io/badge/HackTheBox-Profile-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black"/>
+</a>
+
+<a href="https://play.picoctf.org/">
+<img src="https://img.shields.io/badge/PicoCTF-Player-blue?style=for-the-badge"/>
+</a>
+
+<a href="https://portswigger.net/web-security">
+<img src="https://img.shields.io/badge/PortSwigger-Labs-orange?style=for-the-badge&logo=burpsuite"/>
+</a>
+
+</p>
+
+---
+
+# 📊 GitHub Dashboard
+
+<div align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github"/>
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=github_dark&hide_border=true"/>
+
+</div>
+
+<div align="center">
+
+<img src="https://github-readme-streak-stats.herokuapp.com?user=YOUR_GITHUB_USERNAME&theme=github-dark-blue&hide_border=true"/>
+
+</div>
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&theme=github-dark&hide_border=true"/>
+
+</div>
+
+---
+
+# 🏅 GitHub Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=algolia&margin-w=15&no-frame=true&column=4"/>
+
+</div>
+
+---
+
+# 🐍 Contribution Snake
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-contribution-grid-snake-dark.svg"/>
+
+</div>
+
+---
+
+# 📈 Learning Philosophy
+
+```text
+Curiosity is my biggest strength.
+
+I enjoy understanding how things work,
+breaking them safely,
+learning from them,
+and building stronger solutions.
+
+Every project teaches something new.
+Every challenge improves my skills.
 ```
 
 ---
 
-### 🔧 Stack & Tools
+# 🤝 Connect With Me
 
-**Languages** &nbsp;
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JS-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
+<p align="center">
 
-**Security** &nbsp;
-![Kali](https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square&logo=burpsuite&logoColor=white)
-![Splunk](https://img.shields.io/badge/SIEM-000000?style=flat-square&logo=splunk&logoColor=white)
+<a href="https://linkedin.com/in/YOUR_LINKEDIN">
+<img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/>
+</a>
 
----
+<a href="https://YOUR_PORTFOLIO">
+<img src="https://img.shields.io/badge/Portfolio-Visit-black?style=for-the-badge"/>
+</a>
 
-### 🚀 Projects
+<a href="mailto:YOUR_EMAIL">
+<img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
 
-| Project | Description |
-|---|---|
-| 🛡️ **Filter Shield** | Browser extension blocking phishing URLs & harmful content |
-| 🤖 **Student Risk AI** | Predicts academic risk via GPA, attendance & GitHub activity |
-| 🔐 **Zero-Trust Exam platofrom** | zero-trust based exam platform with integrated SOC dashboard |
-| 🎬 **Tamil Movie Watchlist** | Full-stack app tracking Tamil movies with ratings & genres |
-
----
-
-
----
-
-### 🏅 Certifications
-- 🟦 **Google Cybersecurity Professional Certificate** — Coursera
-- 🟦 **Certified Ethical Hacker** - EC-Council
-- 🟦 **CISCO Ethical Hacker** - CISCO
-- 🟦 **CISCO CCNA** - CISCO
-- 🟩 **Python Certificate** — HackerRank
+</p>
 
 ---
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/MohamedSakeen)
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-Profile-212C42?style=for-the-badge&logo=tryhackme)](https://tryhackme.com/p/MohamedSakeen)
-[![Email](https://img.shields.io/badge/Gmail-Mail_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sakeen@example.com)
+### Thanks for visiting 👋
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00d4ff,100:0d1117&height=100&section=footer"/>
+*"Learning never stops. Neither does curiosity."*
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:00D4FF,100:0D1117"/>
 
 </div>
+````
