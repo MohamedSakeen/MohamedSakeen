@@ -28,33 +28,6 @@
 
 ---
 
-### 📡 System Telemetry & Location Node
-
-<div align="center">
-  <img src="./assets/world-map.svg" alt="Location Node - Chennai, India" width="100%" />
-</div>
-
-<br/>
-
-<table width="100%">
-  <tr>
-    <td width="33%" align="center" style="background-color: #161B22; border-radius: 8px; padding: 16px;">
-      <h4 style="margin: 0; color: #8B949E;">PRIMARY ROLE</h4>
-      <p style="margin: 6px 0 0 0; color: #00D4FF; font-weight: 600;">Cybersecurity Engineering Student</p>
-    </td>
-    <td width="33%" align="center" style="background-color: #161B22; border-radius: 8px; padding: 16px;">
-      <h4 style="margin: 0; color: #8B949E;">CURRENT MISSION</h4>
-      <p style="margin: 6px 0 0 0; color: #58A6FF; font-weight: 600;">Defensive Engineering &amp; Secure Systems</p>
-    </td>
-    <td width="33%" align="center" style="background-color: #161B22; border-radius: 8px; padding: 16px;">
-      <h4 style="margin: 0; color: #8B949E;">CORE FOCUS</h4>
-      <p style="margin: 6px 0 0 0; color: #7EE787; font-weight: 600;">SOC Operations &amp; Zero Trust</p>
-    </td>
-  </tr>
-</table>
-
----
-
 ### 🎯 Current Focus & Specialized Interests
 
 <table width="100%">
@@ -155,33 +128,6 @@
 
 ---
 
-### 🚀 Featured Engineering Projects
-
-<div align="center">
-
-<!-- Project 1: Firewall -->
-<a href="https://github.com/MohamedSakeen/Firewall">
-  <img src="./assets/firewall-card.svg" alt="Firewall Project Card" width="100%" />
-</a>
-
-<br/><br/>
-
-<!-- Project 2: FilterShield -->
-<a href="https://github.com/MohamedSakeen/FilterShield">
-  <img src="./assets/filtershield-card.svg" alt="FilterShield Project Card" width="100%" />
-</a>
-
-<br/><br/>
-
-<!-- Project 3: Zero Trust Examination Platform -->
-<a href="https://github.com/MohamedSakeen/Zero-Trust-Platform">
-  <img src="./assets/zerotrust-card.svg" alt="Zero Trust Examination Platform Card" width="100%" />
-</a>
-
-</div>
-
----
-
 ### 📈 Learning & Evolution Timeline
 
 <div align="center">
@@ -219,30 +165,10 @@
 
 ---
 
-### 📊 GitHub Telemetry & Analytics
+### 🟩 Contribution Graph
 
 <div align="center">
-
-  <table border="0">
-    <tr>
-      <td>
-        <img height="180" src="https://github-readme-stats.vercel.app/api?username=MohamedSakeen&show_icons=true&theme=github_dark&hide_border=true&title_color=00D4FF&icon_color=00D4FF&text_color=F0F6FC&bg_color=0D1117" alt="GitHub Stats" />
-      </td>
-      <td>
-        <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MohamedSakeen&layout=compact&theme=github_dark&hide_border=true&title_color=58A6FF&text_color=F0F6FC&bg_color=0D1117" alt="Top Languages" />
-      </td>
-    </tr>
-  </table>
-
-  <br/>
-
-  <img width="100%" src="https://github-readme-streak-stats.herokuapp.com?user=MohamedSakeen&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=30363D&ring=00D4FF&fire=00D4FF&currStreakNum=F0F6FC&sideNums=F0F6FC" alt="GitHub Streak Stats" />
-
-  <br/><br/>
-
-  <h4>🟩 Contribution Grid Snake</h4>
   <img width="100%" src="./assets/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" />
-
 </div>
 
 ---

@@ -3,9 +3,7 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
 
-      * {
-        box-sizing: border-box;
-      }
+      * { box-sizing: border-box; }
 
       .bg-rect {
         fill: #0D1117;
@@ -18,226 +16,165 @@
       .grid-pattern {
         stroke: #161B22;
         stroke-width: 1px;
-        opacity: 0.6;
+        opacity: 0.5;
       }
 
-      .glow-primary {
-        filter: blur(60px);
-        opacity: 0.25;
-      }
+      /* Decryption keyframes - Optimized step toggles for zero lag */
+      .t0 { animation: s0 8s infinite step-end; }
+      .t1 { animation: s1 8s infinite step-end; }
+      .t2 { animation: s2 8s infinite step-end; }
+      .t3 { animation: s3 8s infinite step-end; }
+      .t4 { animation: s4 8s infinite step-end; }
+      .t5 { animation: s5 8s infinite step-end; }
+      .tFinal { animation: sFinal 8s infinite step-end; }
 
-      .glow-secondary {
-        filter: blur(80px);
-        opacity: 0.18;
-      }
+      @keyframes s0 { 0% { opacity: 1; } 4% { opacity: 0; } }
+      @keyframes s1 { 0%, 4% { opacity: 0; } 4% { opacity: 1; } 8% { opacity: 0; } }
+      @keyframes s2 { 0%, 8% { opacity: 0; } 8% { opacity: 1; } 12% { opacity: 0; } }
+      @keyframes s3 { 0%, 12% { opacity: 0; } 12% { opacity: 1; } 16% { opacity: 0; } }
+      @keyframes s4 { 0%, 16% { opacity: 0; } 16% { opacity: 1; } 22% { opacity: 0; } }
+      @keyframes s5 { 0%, 22% { opacity: 0; } 22% { opacity: 1; } 28% { opacity: 0; } }
+      @keyframes sFinal { 0%, 28% { opacity: 0; } 28%, 95% { opacity: 1; } 98%, 100% { opacity: 0; } }
 
-      /* Decryption Text Steps */
-      .decrypt-text {
-        font-family: 'JetBrains Mono', monospace;
-        font-weight: 700;
-        font-size: 42px;
-        letter-spacing: -0.5px;
-      }
-
-      /* Animated text layers */
-      .step-0 { animation: step0Anim 9s infinite; }
-      .step-1 { animation: step1Anim 9s infinite; }
-      .step-2 { animation: step2Anim 9s infinite; }
-      .step-3 { animation: step3Anim 9s infinite; }
-      .step-4 { animation: step4Anim 9s infinite; }
-      .step-5 { animation: step5Anim 9s infinite; }
-      .final-text { animation: finalAnim 9s infinite; }
-
-      @keyframes step0Anim {
-        0%, 3% { opacity: 1; }
-        4%, 100% { opacity: 0; }
-      }
-      @keyframes step1Anim {
-        0%, 3.5% { opacity: 0; }
-        4%, 7.5% { opacity: 1; }
-        8%, 100% { opacity: 0; }
-      }
-      @keyframes step2Anim {
-        0%, 7.5% { opacity: 0; }
-        8%, 11.5% { opacity: 1; }
-        12%, 100% { opacity: 0; }
-      }
-      @keyframes step3Anim {
-        0%, 11.5% { opacity: 0; }
-        12%, 15.5% { opacity: 1; }
-        16%, 100% { opacity: 0; }
-      }
-      @keyframes step4Anim {
-        0%, 15.5% { opacity: 0; }
-        16%, 19.5% { opacity: 1; }
-        20%, 100% { opacity: 0; }
-      }
-      @keyframes step5Anim {
-        0%, 19.5% { opacity: 0; }
-        20%, 25.5% { opacity: 1; }
-        26%, 100% { opacity: 0; }
-      }
-      @keyframes finalAnim {
-        0%, 25.5% { opacity: 0; }
-        26%, 95% { opacity: 1; }
-        98%, 100% { opacity: 0; }
-      }
-
-      .subtitle {
+      .sub-text {
         font-family: 'Inter', sans-serif;
         font-size: 16px;
         font-weight: 500;
         fill: #8B949E;
         opacity: 0;
-        animation: fadeInSub 9s infinite;
+        animation: subFade 8s infinite linear;
       }
 
-      @keyframes fadeInSub {
-        0%, 26% { opacity: 0; transform: translateY(6px); }
-        32%, 95% { opacity: 1; transform: translateY(0); }
+      @keyframes subFade {
+        0%, 28% { opacity: 0; }
+        35%, 94% { opacity: 1; }
         98%, 100% { opacity: 0; }
       }
 
-      .badge-container {
+      .tag-row {
         opacity: 0;
-        animation: fadeInBadges 9s infinite;
+        animation: tagFade 8s infinite linear;
       }
 
-      @keyframes fadeInBadges {
-        0%, 34% { opacity: 0; }
-        40%, 95% { opacity: 1; }
+      @keyframes tagFade {
+        0%, 35% { opacity: 0; }
+        42%, 94% { opacity: 1; }
         98%, 100% { opacity: 0; }
       }
 
-      .cursor {
-        fill: #00D4FF;
-        animation: blink 0.8s infinite alternate;
+      .cursor-line {
+        stroke: #00D4FF;
+        stroke-width: 3px;
+        animation: blink 0.7s infinite alternate step-start;
       }
 
       @keyframes blink {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
+        50% { opacity: 0; }
       }
 
-      .pill {
-        fill: rgba(88, 166, 255, 0.1);
-        stroke: rgba(88, 166, 255, 0.3);
+      .status-pill {
+        fill: rgba(88, 166, 255, 0.08);
+        stroke: rgba(88, 166, 255, 0.25);
         stroke-width: 1px;
         rx: 12px;
       }
-
-      .pill-text {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 11px;
-        font-weight: 500;
-        fill: #58A6FF;
-      }
-
-      .pulse-dot {
-        fill: #7EE787;
-        animation: pulseGlow 2s infinite alternate;
-      }
-
-      @keyframes pulseGlow {
-        0% { transform: scale(1); opacity: 0.7; }
-        100% { transform: scale(1.4); opacity: 1; }
-      }
     </style>
 
-    <!-- Linear & Radial Gradients -->
-    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00D4FF" />
       <stop offset="100%" stop-color="#58A6FF" />
     </linearGradient>
 
-    <radialGradient id="bgGlow1" cx="20%" cy="30%" r="60%">
-      <stop offset="0%" stop-color="#00D4FF" />
+    <radialGradient id="cornerGlow" cx="10%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.15" />
       <stop offset="100%" stop-color="transparent" />
     </radialGradient>
 
-    <radialGradient id="bgGlow2" cx="80%" cy="70%" r="60%">
-      <stop offset="0%" stop-color="#58A6FF" />
-      <stop offset="100%" stop-color="transparent" />
-    </radialGradient>
-
-    <!-- Background Grid -->
     <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
       <path d="M 30 0 L 0 0 0 30" fill="none" class="grid-pattern" />
     </pattern>
   </defs>
 
-  <!-- Container Box -->
+  <!-- Main Background Container -->
   <rect width="920" height="280" class="bg-rect" />
-
-  <!-- Ambient Glow Effects -->
-  <circle cx="200" cy="80" r="140" fill="url(#bgGlow1)" class="glow-primary" />
-  <circle cx="720" cy="200" r="160" fill="url(#bgGlow2)" class="glow-secondary" />
-
-  <!-- Grid Overlay -->
+  <rect width="920" height="280" rx="16" ry="16" fill="url(#cornerGlow)" />
   <rect width="920" height="280" fill="url(#grid)" rx="16" ry="16" />
 
-  <!-- Status Indicator Badge (Top Right) -->
-  <g transform="translate(670, 32)">
-    <rect width="218" height="28" class="pill" />
-    <circle cx="16" cy="14" r="4" class="pulse-dot" />
-    <text x="28" y="18" class="pill-text">SOC &amp; DEFENSIVE SECURITY</text>
+  <!-- Top Right Status Badge -->
+  <g transform="translate(660, 32)">
+    <rect width="228" height="28" class="status-pill" />
+    <circle cx="16" cy="14" r="4" fill="#7EE787" />
+    <text x="28" y="18" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#58A6FF">SOC &amp; DEFENSIVE SECURITY</text>
   </g>
 
-  <!-- System Header Icon / Tag -->
+  <!-- Security Tag Header -->
   <g transform="translate(48, 48)">
     <rect width="112" height="24" rx="6" fill="rgba(0, 212, 255, 0.08)" stroke="rgba(0, 212, 255, 0.25)" stroke-width="1" />
     <text x="12" y="16" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#00D4FF">SEC_ENGINEER</text>
   </g>
 
-  <!-- Decryption Name Sequence -->
+  <!-- Decryption Name Sequence (Optimized & Non-Laggy) -->
   <g transform="translate(48, 125)">
-    <!-- Step 0: M0 -->
-    <text class="decrypt-text step-0" fill="#00D4FF">M0<tspan class="cursor">_</tspan></text>
-    
-    <!-- Step 1: M0h -->
-    <text class="decrypt-text step-1" fill="#00D4FF">M0h<tspan class="cursor">_</tspan></text>
-    
-    <!-- Step 2: M0h4 -->
-    <text class="decrypt-text step-2" fill="#00D4FF">M0h4<tspan class="cursor">_</tspan></text>
+    <!-- Stage 0: M0 -->
+    <g class="t0">
+      <text font-family="'JetBrains Mono', monospace" font-weight="700" font-size="42" fill="#00D4FF">M0</text>
+      <line x1="60" y1="-32" x2="60" y2="6" class="cursor-line" />
+    </g>
 
-    <!-- Step 3: M0h4m3d -->
-    <text class="decrypt-text step-3" fill="#00D4FF">M0h4m3d<tspan class="cursor">_</tspan></text>
+    <!-- Stage 1: M0h -->
+    <g class="t1">
+      <text font-family="'JetBrains Mono', monospace" font-weight="700" font-size="42" fill="#00D4FF">M0h</text>
+      <line x1="86" y1="-32" x2="86" y2="6" class="cursor-line" />
+    </g>
 
-    <!-- Step 4: M0h4m3d S4k33n -->
-    <text class="decrypt-text step-4" fill="#00D4FF">M0h4m3d S4k33n<tspan class="cursor">_</tspan></text>
+    <!-- Stage 2: M0h4 -->
+    <g class="t2">
+      <text font-family="'JetBrains Mono', monospace" font-weight="700" font-size="42" fill="#00D4FF">M0h4</text>
+      <line x1="112" y1="-32" x2="112" y2="6" class="cursor-line" />
+    </g>
 
-    <!-- Step 5: Intermediate decrypting -->
-    <text class="decrypt-text step-5" fill="#58A6FF">Moham3d Sak3en<tspan class="cursor">_</tspan></text>
+    <!-- Stage 3: M0h4m3d -->
+    <g class="t3">
+      <text font-family="'JetBrains Mono', monospace" font-weight="700" font-size="42" fill="#00D4FF">M0h4m3d</text>
+      <line x1="190" y1="-32" x2="190" y2="6" class="cursor-line" />
+    </g>
 
-    <!-- Final State: Mohamed Sakeen -->
-    <g class="final-text">
-      <text font-family="'JetBrains Mono', monospace" font-weight="700" font-size="42" fill="url(#primaryGradient)" letter-spacing="-0.5">Mohamed Sakeen</text>
-      <!-- Cursor next to final text -->
-      <rect x="365" y="-32" width="10" height="38" rx="2" class="cursor" />
+    <!-- Stage 4: M0h4m3d S4k33n -->
+    <g class="t4">
+      <text font-family="'JetBrains Mono', monospace" font-weight="700" font-size="42" fill="#00D4FF">M0h4m3d S4k33n</text>
+      <line x1="370" y1="-32" x2="370" y2="6" class="cursor-line" />
+    </g>
+
+    <!-- Stage 5: Decrypting transition -->
+    <g class="t5">
+      <text font-family="'JetBrains Mono', monospace" font-weight="700" font-size="42" fill="#58A6FF">Moham3d Sak3en</text>
+      <line x1="370" y1="-32" x2="370" y2="6" class="cursor-line" />
+    </g>
+
+    <!-- Final Stage: Mohamed Sakeen -->
+    <g class="tFinal">
+      <text font-family="'JetBrains Mono', monospace" font-weight="700" font-size="42" fill="url(#titleGradient)" letter-spacing="-0.5">Mohamed Sakeen</text>
+      <line x1="372" y1="-32" x2="372" y2="6" class="cursor-line" />
     </g>
   </g>
 
   <!-- Subtitle -->
-  <g transform="translate(48, 175)" class="subtitle">
+  <g transform="translate(48, 172)" class="sub-text">
     <text x="0" y="0">Cybersecurity Engineering Student</text>
   </g>
 
-  <!-- Tag Pills Row -->
-  <g transform="translate(48, 202)" class="badge-container">
-    <!-- Tag 1 -->
-    <rect x="0" y="0" width="70" height="26" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1" />
-    <text x="35" y="17" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#F0F6FC" text-anchor="middle">SOC</text>
+  <!-- Tags Row -->
+  <g transform="translate(48, 202)" class="tag-row">
+    <rect x="0" y="0" width="60" height="26" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    <text x="30" y="17" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#F0F6FC" text-anchor="middle">SOC</text>
 
-    <!-- Tag 2 -->
-    <rect x="80" y="0" width="145" height="26" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1" />
-    <text x="152.5" y="17" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#F0F6FC" text-anchor="middle">Threat Detection</text>
+    <rect x="70" y="0" width="145" height="26" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    <text x="142.5" y="17" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#F0F6FC" text-anchor="middle">Threat Detection</text>
 
-    <!-- Tag 3 -->
-    <rect x="235" y="0" width="100" height="26" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1" />
-    <text x="285" y="17" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#F0F6FC" text-anchor="middle">Zero Trust</text>
+    <rect x="225" y="0" width="95" height="26" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    <text x="272.5" y="17" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#F0F6FC" text-anchor="middle">Zero Trust</text>
 
-    <!-- Tag 4 -->
-    <rect x="345" y="0" width="145" height="26" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1" />
-    <text x="417.5" y="17" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#7EE787" text-anchor="middle">Defensive Security</text>
+    <rect x="330" y="0" width="145" height="26" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    <text x="402.5" y="17" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#7EE787" text-anchor="middle">Defensive Security</text>
   </g>
 </svg>
